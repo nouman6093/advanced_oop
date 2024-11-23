@@ -1,0 +1,11 @@
+for creating database:
+CREATE DATABASE aoop_login;
+
+for creating tables and columns in it:
+USE aoop_login;
+
+CREATE TABLE signup_info (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
