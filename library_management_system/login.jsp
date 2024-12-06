@@ -72,6 +72,16 @@
 <body>
 <div class="container">
     <h2>Login</h2>
+
+    <%
+        String message = request.getParameter("message");
+        if (message != null) {
+    %>
+    <div class="alert" style="color: red; text-align: center"><%= message %></div>
+    <%
+        }
+    %>
+
     <form action="LoginServlet" method="post">
         <input type="text" name="username" placeholder="Enter username" required>
         <input type="password" name="password" placeholder="Enter password" required>
